@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas: "navBar"
+                        "busqueda"
+                        "main"
+                        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh 1fr 10vh;
+    height: 100vh;
+}
+.navBar{
+    background-color: blue;
+    grid-area: navBar;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBar img{
+    height: 6vh;
+}
+.seleccion{
+    width: 40vw;
+    height: 3vh;
+    border-radius: 0.3rem;
+}
+.icono{
+    font-size: 1.8rem;
+}
+.filtro_de_busqueda{
+    background-color: blueviolet;
+    grid-area: busqueda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    background-color: chartreuse;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjetas{
+    background-color: tomato;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container_imagen{
+    height: 18rem;
+
+}
+.container_imagen img{
+    width: 100%;
+}
+.tarjetas button{
+    height: 15%;
+    width: 60%;
+    border-style: none;
+    border-radius: 0.7rem;
+}
+.container_texto{
+    text-align: center;
+}
+.paginas{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    width: 80vw;
+}
+.tarjeta_visible{
+    display: none;
+}
+.footer{
+    background-color: turquoise;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.marcas-footer{
+    display: flex;
+    gap: 1rem;
+}
+.derechos-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+@media(min-width:576px){
+    body{
+        display: grid;
+        grid-template-areas: "navBar busqueda"
+                            "navBar main"
+                            "navBar main"
+                            "footer main";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+    }
+}
