@@ -151,12 +151,24 @@ body{
         justify-content: center;
         flex-wrap: wrap;
     }
+    .container_tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .tarjetas{
-        height: 37vh;
+        height: 36vh;
         width: 15vw;
         display: flex;
         flex-direction: column;
         margin: 1.5rem;
+    }
+    .container_imagen{
+        height: 18em;
+    
+    }
+    .container_imagen img{
+        height: 100%;
     }
     .tarjetas button{
         margin-top: 0.5em;
